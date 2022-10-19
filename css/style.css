@@ -16,7 +16,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
 header {
   width: 100%;
   height: 400px;
@@ -28,8 +27,11 @@ header {
 }
 header .textos-header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 430px;
   width: 100%;
+  margin-top: 80px;
 }
 header .textos-header h1 {
   font-size: 50px;
@@ -40,21 +42,20 @@ header .textos-header h2 {
   font-weight: 300;
   color: #fff;
 }
-
 .text {
   color: #000;
   padding: 15px;
 }
-
 nav {
   text-align: right;
   padding: 30px 50px 0 0;
 }
 nav a {
   color: white;
-  color-font-weight: 300;
-  color-text-decoration: none;
-  color-margin-right: 10px;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+  display: inline-block;
 }
 nav > a:hover {
   text-decoration: underline;
@@ -62,7 +63,8 @@ nav > a:hover {
 
 footer {
   background-color: rgba(0, 0, 0, 0.767);
-  color: rgb(255, 255, 255);
+  cbackground-color: rgba(15, 117, 177, 0.377);
+  color: rgb(17, 16, 16);
   font-size: 25px;
   text-align: left;
   padding: 30px 50px 0 0;
@@ -74,4 +76,8 @@ footer {
   background-color: rgba(193, 252, 181, 0.753);
   padding: 25px;
   color: #fff;
+}
+.imagen1 {
+  width: 320px;
+  height: 270px;
 }/*# sourceMappingURL=style.css.map */

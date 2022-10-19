@@ -1,8 +1,17 @@
 @import 'reset'
+
+@mixin movil( $medida : 480px)
+    @media screen and (max-width: $medida)
+        @content
+    
 body
     margin: 0
     padding: 0
     box-sizing: border-box
+    @include movil()
+    @include movil(768px)
+    @include movil(1024px)
+    
 header
       width: 100%
       height: 400px
@@ -13,34 +22,54 @@ header
       background-size: cover
       background-attachment: fixed
       position: relative
+      @include movil()
+      @include movil(768px)
+      @include movil(1024px)
       .textos-header
          display: flex
+         flex-direction: column
+         align-items: center
          height: 430px
          width: 100%
+         margin-top: 80px
+         @include movil()
+         @include movil(768px)
+         @include movil(1024px)
          h1
             font-size: 50px
             color: #fff
+            @include movil()
+            @include movil(768px)
+            @include movil(1024px)
          h2
             font-size: 25px
             font-weight: 300
             color: #fff
+            @include movil()
+            @include movil(768px)
+            @include movil(1024px)
 .text
     color: #000
     padding: 15px
+    @include movil()
+    @include movil(768px)
+    @include movil(1024px)
     
 nav 
      text-align: right
      padding: 30px 50px 0 0
      a
         color: white
-         font-weight: 300
-         text-decoration: none
-         margin-right: 10px
+        font-weight: 300
+        text-decoration: none
+        margin-right: 10px
+        display: inline-block
      &>a:hover 
-         text-decoration: underline
+        text-decoration: underline
 footer
     background-color: rgba(0, 0, 0, 0.767)
-    color: rgb(255, 255, 255)
+    cbackground-color: rgba(15, 117, 177, 0.377)
+    color: rgb(17, 16, 16)
     font-size: 25px
     text-align: left
     padding: 30px 50px 0 0
@@ -51,13 +80,10 @@ footer
     background-color: rgba(193, 252, 181, 0.753)
     padding: 25px
     color: #fff
-@media screen and (min-width: 600px)
+    @include movil()
+    @include movil(768px)
+    @include movil(1024px)
 
-    body
-        background: #fff    
-    header
-        background-size: cover
-        background-repeat: no-repeat
-       
-        
-      
+.imagen1
+    width: 320px
+    height: 270px
