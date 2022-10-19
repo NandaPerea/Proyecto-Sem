@@ -80,4 +80,10 @@ footer {
 .imagen1 {
   width: 320px;
   height: 270px;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: rgba(193, 252, 181, 0.753);
+  }
 }/*# sourceMappingURL=style.css.map */
